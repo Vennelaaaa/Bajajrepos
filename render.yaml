@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: Bajajreposdeploy  # Name of your service
+    env: python  # Specify environment
+    buildCommand: pip install -r requirements.txt  # Command to install dependencies
+    startCommand: gunicorn app:app  # Command to start the app
+    pythonVersion: 3.9  # Specify a Python version compatible with your dependencies
